@@ -36,7 +36,7 @@ const App = () => {
       <h1 className="Header">Characters</h1>
       <Bod>
        { char.map(p => {
-         return <CharacterPan key={p.id} name={p.name} image={p.image} origin={p.origin.name}/>
+         return <CharacterPan key={p.id} name={p.name} image={p.image} origin={p.origin.name} status={p.status} species={p.species}/>
        })}
       </Bod>
     </div>
