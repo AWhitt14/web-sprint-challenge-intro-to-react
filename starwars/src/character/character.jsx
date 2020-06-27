@@ -17,8 +17,9 @@ text-align: center;
 width: 100%;
 `;
 
-const hName = styled.h2`
- 
+const HName = styled.h2`
+ background-color: #44281d;
+ color: #f0e14a;
 `;
 const List = styled.ul`
 list-style-position: inside;
@@ -43,7 +44,7 @@ const CharacterPan = (props) => {
         <Container>
                 <Image1 src={props.image} alt='Image of character'/>
             <Des>
-                <h2>{props.name}</h2>
+                <HName>{props.name}</HName>
             <List>
                 <LI>Origin:{props.origin}</LI>
                 <LI>Species:{props.species}</LI>
