@@ -4,7 +4,10 @@ import Axios from 'axios';
 import CharacterPan from './character/character';
 import styled from 'styled-components';
 
-
+const H1H = styled.h1`
+color: #e89ac7;
+background-color:rgba(0, 0, 0, 0.5);
+`;
 const Bod = styled.div`
 text-align: center;
 display: flex;
@@ -33,7 +36,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <h1 className="Header">Characters</h1>
+      <H1H className="Header">Characters</H1H>
       <Bod>
        { char.map(p => {
          return <CharacterPan key={p.id} name={p.name} image={p.image} origin={p.origin.name} status={p.status} species={p.species}/>
